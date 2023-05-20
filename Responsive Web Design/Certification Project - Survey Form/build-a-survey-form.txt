@@ -1,0 +1,136 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <title>Sikkunt Survey</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+  <header>
+  <body>
+    <h1 id="title">Sikkunt survey</h1>
+    <p id="description">Are you a certified sikkunt? Fill this sheet to be find out!</p>
+    <form id="survey-form" action="submit" method="post">
+      <fieldset>
+        <label id="name-label" for="name">
+          Enter your full name:
+          <input id="name" name="name" type="text" placeholder="Joe Mama" required/>
+        </label>
+        <label id="email-label" for="email">
+          Enter your email address:
+          <input id="email" name="email" type="email" placeholder="joemama@email.com" required/>
+        </label>
+        <label id="number-label" for="number">
+          How much do you bench (kg):
+          <input id="number" name="number" type="number" min=0 max=500 placeholder="100" required/>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">
+          Where do you gym?
+          <select id="dropdown">
+            <option value="" disabled selected hidden>Gym Name</option>
+            <option value="1">ActiveSG</option>
+            <option value="2">Anytime Fitness</option>
+            <option value="3">Fitness First</option>
+            <option value="4">Fitnessworkz</option>
+          </select>
+        </label>
+        <br/>
+        <label for="male" class="radio-label">
+           <input id="male" type="radio" name="gender" class="inline" value="1"/>Male
+        </label>
+        <label for="female" class="radio-label">
+          <input id="female" type="radio" name="gender" class="inline" value="2"/>Female
+        </label>
+        <br/>
+        <label for="consent" class="radio-label">
+          <input id="consent" type="checkbox" name="consent" class="inline" value="1" required/>I consent to my information being collected
+        </label>
+        <label for="terms" class="radio-label">
+          <input id="terms" type="checkbox" name="terms" class="inline" value="2" required/>I agree to the terms and conditions
+        </label>
+        <br/>
+        <label>
+          <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Write a tribute for Zyzz here..."/></textarea>
+      </fieldset>
+      <input id="submit" type="submit"/>
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  background-color: #C0C6C8;
+  color: black;
+  width: 100%;
+  height: 100vh;
+  font-size: 16px;
+  margin: 2rem 0;
+  font-family: Helvetica Neue;
+}
+
+fieldset {
+  border: none;
+}
+
+h1, p {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+form {
+  max-width: 500px;
+  min-width: 300px;
+  margin: auto;
+}
+
+fieldset {
+  margin: 0;
+}
+
+label {
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.radio-label {
+  display: block;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+.radio-and-checkbox {
+  margin: 0;
+}
+
+label:first-of-type {
+  margin: 0;
+}
+
+input, select, textarea {
+  display: block;
+  margin-top: 0.5rem;
+  width: 100%;
+  min-height: 2rem;
+}
+
+.inline {
+  display: inline;
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  width: 60%;
+  margin: auto;
+}
+
+** end of undefined **
+
