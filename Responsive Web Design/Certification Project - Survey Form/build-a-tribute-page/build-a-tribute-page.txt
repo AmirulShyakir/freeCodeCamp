@@ -1,0 +1,98 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Zyzz Tribute Page</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, inital-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <main id="main">
+      <div class="section">
+        <h1 id="title">Zyzz Tribute</h1>
+        <h2>The sickest of all time.</h2>
+      </div>
+      <div id="img-div">
+        <img id="image" src="https://i.redd.it/2dyjysodjff71.jpg">    
+        <figcaption id="img-caption">Aziz Sergeyevich Shavershian 1989-2011</figcaption>
+      </div>
+      <div class="section">
+        <h2>Biography</h2>
+        <p id="tribute-info">Shavershian was born in Moscow to Kurdish parents from Armenia's Kurdish minority. He was the youngest son of Maiane Iboian, who works in cardiology, and Sergei Shavershian. He had one older brother, Said Shavershian, who is also known by the screen name "Chestbrah". In 1993, Shavershian and his family moved to Australia. He was raised in Eastwood, New South Wales, and attended Marist College Eastwood secondary school, where he achieved Dux of the college. Prior to his death in August 2011, he was set to graduate from the University of Western Sydney, with a degree in business and commerce. He was an atheist, though he wore a rosary and his grave is adorned with a cross.</p>
+      </div>
+      <footer>
+        <p>Made by <a id="tribute-link" target="_blank" href="https://github.com/AmirulShyakir">Amirul Shyakir</a></p>
+      </footer>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 20px;
+  background-color: white;
+  //border: 3px solid lightgreen;
+}
+
+h1 {
+  font-size: min(6vw, 2em)
+}
+
+h2 {
+  font-size: min(4vw, 1.5em)
+}
+
+p, figcaption {
+  font-size: min(3vw, 1em)
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  //border: 3px solid red;
+}
+
+#img-div {
+  max-width: 700px;
+  padding: 50px 50px;
+  width: 100%;
+  text-align: center;
+  //border: 3px solid yellow;
+}
+
+figcaption {
+  margin: 1rem;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  background-color: E5E5E5;
+  width: 100%;
+  min-height: 60vh;
+  padding: 2rem 5rem;
+  text-align: left;
+}
+
+footer {
+  width: 100vh;
+  padding: 20px 0;
+}
+
+** end of undefined **
+
