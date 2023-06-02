@@ -1,0 +1,153 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shakstetic Documentation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>
+        <h1>Shakstetic Docs</h1>
+      </header>
+        <h2><a class="nav-link" href="#Overview">Overview</a></h2>
+      <h2><a class="nav-link" href="#Lorem2">Lorem2</a></h2>
+      <h2><a class="nav-link" href="#Lorem3">Lorem3</a></h2>
+      <h2><a class="nav-link" href="#Lorem4">Lorem4</a></h2>
+      <h2><a class="nav-link" href="#Lorem5">Lorem5</a></h2>
+    </nav>
+    <main id="main-doc">
+      <section id="Overview" class="main-section">
+        <header>
+          <h1>Overview</h1>
+        </header>
+          <p>Shakstetic is an alias that the Java and web developer Amirul Shyakir goes by on social media accounts such as Github and TikTok.
+          </p>
+          <p> It is a play on his last name and the word aesthetic, a nod to his interests in creating aesthetically pleasing designs as well as maintaining a healthy physique that gym-goers use the aforementioned word.
+          </p>
+      </section>
+      <section id="Lorem2" class="main-section">
+        <header>
+          <h1>Lorem2</h1>
+        </header>
+        <p>Lorem Ipsum</p>
+        <p>Lorem Ipsum</p>
+        <ul>
+          <li>Item</li>
+          <li>Item</li>
+          <li>Item</li>
+          <li>Item</li>
+          <li>Item</li>
+        </ul>
+      </section>
+      <section id="Lorem3" class="main-section">
+        <header>
+          <h1>Lorem3</h1>
+        </header>
+        <p>Lorem Ipsum</p>
+        <p>Lorem Ipsum</p>
+        <code>Code Goes Here</code>
+        <code>Code Goes Here</code>
+      </section>
+      <section id="Lorem4" class="main-section">
+        <header>
+          <h1>Lorem4</h1>
+         </header>
+        <p>Lorem Ipsum</p>
+        <p>Lorem Ipsum</p>
+        <code>Code Goes Here</code>
+        <code>Code Goes Here</code>
+      </section>
+      <section id="Lorem5" class="main-section">
+        <header>
+          <h1>Lorem5</h1>
+         </header>
+        <p>Lorem Ipsum</p>
+        <p>Lorem Ipsum</p>
+        <code>Code Goes Here</code>
+      </section>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f1faee;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #a8dadc;
+  color: 1d3557;
+  padding: 20px;
+}
+
+a {
+  color: #1d3557;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#f1faee;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  margin-right: 50px;
+  left: 350px;
+  padding-top: 20px;
+}
+
+main h1 {
+  color: #1d3557;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section h1, section p {
+  width: 100%;
+}
+
+code {
+  background-color: a8dadc;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem;
+  width: 100%;
+  min-height: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+@media(max-width: 500px) {
+
+}
+
+@media(min-wdith: 780px) {
+  
+}
+
+
+
+** end of undefined **
+
