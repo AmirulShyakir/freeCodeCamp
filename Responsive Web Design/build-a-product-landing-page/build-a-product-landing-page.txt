@@ -1,0 +1,275 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Product Landing Page</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-value=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://singaporegp.sg/media/img/logo-en.png?v=4"/>
+      <nav id="nav-bar">
+        <a class="nav-link" href="#info"><h2>Info</h2></a>
+        <a class="nav-link" href="#circuit"><h2>Circuit</h2></a>
+        <a class="nav-link" href="#tickets"><h2>Tickets</h2></a>
+      </nav>
+      <a id="hamburger" href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </header>
+    <main>
+      <section id="info">
+        <div class="subheading">
+          <h1>Info</h1>
+          <div class="line">&nbsp</div>
+        </div>
+        <p>
+          The Singapore Grand Prix is a motor racing event which forms part of the Formula One World Championship. The event takes place on the Marina Bay Street Circuit and was the inaugural night race and first street circuit in Asia designed for Formula One races.
+        </p>
+        <p>
+          Formula 1’s first night race has firmly established itself as one of F1’s premier destinations thanks to its spectacular location on public roads set against a backdrop of the spectacular Singapore skyline, slick marketing and big name concerts.
+        </p> 
+        <p>
+          The Singapore Grand Prix has enjoyed strong financial support from the local government and recently signed a new long-term contract to remain on the schedule until at least 2028, which will mark the 20th anniversary of the inaugural event.
+        </p> 
+        <p>
+While neighbouring Malaysia lost its place on the Formula 1 calendar in 2018 due to big financial losses, the Singapore Grand Prix continues to be a success and is a big draw for tourism in the city-state. The event attracts over 30,000 international fans to Singapore each September. 
+        </p>
+        <p>
+While the inaugural race at Marina Bay Street Circuit attracted a weekend attendance figure of 300,000, spectator numbers suffered a short period of decline in the 2010s, reaching an all-time low of 218,000 in 2016. Since then numbers have hovered around 260,000. The coronavirus pandemic saw the Singapore Grand Prix cancelled in both 2020 and 2021. The event returned in 2022 and had record-breaking spectator numbers. 
+        </p>
+      </section>
+      <section>
+        <div id="circuit" class="subheading">
+          <h1>Circuit</h1>
+          <div class="line">&nbsp</div>
+        </div>
+        <p>
+          The 2023 Singapore Grand Prix is expected to have major changes in the layout, with Turns 16–19 set to be temporarily removed to facilitate the construction of NS Square. Instead, there will be a new flat-out section until turn 16 (currently turn 20), with number of laps increasing from 61 to 63 and lap times to decrease by approximately twenty seconds. Race distance is expected to be covered by one half an hour unlike previous editions usually lasting until the two hours time limit.
+        </p>
+        <iframe id="video" src="https://www.youtube.com/embed/DuOfPG_QkCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+      </section>
+      <section id="tickets">
+        <div id="tickets" class="subheading">
+          <h1>Tickets</h1>
+          <div class="line">&nbsp</div>
+        </div>
+        <p>
+          All tickets for all hospitality packages, grandstands and walkabouts are currently sold out. Singapore GP is always looking out for ways to expand this Formula One experience for all motorsports fans and we are exploring new grandstands and ticket options. Stay tuned for more updates via our email newsletter.
+        </p>
+        <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+          <p id="contact-details">Contact Details</p>
+          <input id="name" name="name" type="text" placeholder="Name" required/>
+          <input id="email" name="email" type="email" placeholder="Email Address" required/>
+          <input id="submit" type="submit"/>
+        </form>
+      <section>
+    </main>
+  </body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: white;
+  background-color: #05273d;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: #073451;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  padding: 2rem;
+}
+
+#header-img {
+  max-width: 40%;
+  min-width: 200px;
+  padding: 2rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  min-width: 200px;
+  max-width: 400px;
+  gap: 3rem;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+#hamburger {
+  display: none;
+  margin-right: 2rem;
+  font-size: 24px;
+}
+
+i {
+  color: white;
+  transition: color 0.5s;
+}
+
+i:hover {
+  color: #e10600;
+}
+
+nav h2 {
+  font-family: Rockwell;
+  font-size: 16px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.5s;
+}
+
+.nav-link:hover {
+  color: #e10600;
+}
+
+#header-img {
+  max-height: 80px;
+}
+
+body {
+  position: absolute;
+  top: calc(100px + 4rem);
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main {
+  margin: 2rem 100px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 0 2rem;
+}
+
+section:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+#info {
+  width: 100%;
+}
+
+h1 {
+  font-family: Helvetica;
+  font-style: italic;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 18px;
+}
+
+.subheading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.line {
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    #e10600,
+    #073451 50%
+  )
+}
+
+#video {
+  width: 56vw;
+  height: 31.5vw;
+  min-width: 360px;
+  min-height: 202.5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 692px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  #header-img {
+    min-width: 400px;
+  }
+
+  main {
+    margin: 2rem 20px;
+  }
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+}
+
+input {
+  width: 100%;
+  height: 2rem;
+  border-radius: 50px;
+  border: 1px solid #073451;
+  padding: 20px;
+}
+
+#contact-details {
+  margin-bottom: -15px;
+}
+
+#submit {
+  background-color: #e10600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  height: 2.5rem;
+  width: 150px;
+  text-align: center;
+}
+
+** end of undefined **
+
