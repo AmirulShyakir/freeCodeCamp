@@ -204,15 +204,43 @@ input::placeholder {
   }
 
   #header-img {
-    min-width: 400px;
+    min-width: 350px;
   }
 
   main {
-    margin: 2rem 20px;
+    margin: 4rem 20px;
   }
 
   input {
     margin-right: 0px;
   }
+}
   
+  @media screen and (max-width: 480px) {
+    header nav {
+      display: none;
+    }
+  
+    #hamburger {
+      display: block;
+      margin-right: 1rem;
+    }
+  
+    #header-img {
+      min-width: 250px;
+      margin-left: 0;
+      padding-left: 1rem;
+    }
+  
+    main {
+      margin: 4rem 20px;
+    }
+  
+    input {
+      margin-right: 0px;
+    }
+
+    section {
+      padding: 0;
+    }
 }
